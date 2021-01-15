@@ -20,3 +20,9 @@ class Classroom:
     def oldest_student(self):
         return max(self.list_of_students, key=attrgetter('age'))
 
+
+geeks = Classroom()
+geeks.add_student("Mary", 15)
+geeks.add_student("Jack", 17)
+geeks.add_student("Sue", 16)
+print(str(geeks.list_of_students))
